@@ -1,5 +1,7 @@
 
-    
+import numpy as np
+import math
+from mc import MarkovChain
 
 # new class that inherits from MarkovChain as a bit sequence Markov chain
 class BitSequenceMarkovChain(MarkovChain):
