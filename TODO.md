@@ -1,5 +1,7 @@
 # Solomonoff induction
 
+NOTE: This is outdated. I went with an n-gram model over bytes.
+
 I'm writing a blog post about LLM's next-token prediction and Solomonoff induction. I want to write this blog post by only considering a finite set of possible functions for generating reality.
 Reality will be a sequence of 0's and 1's that we will observe over "time".
 
