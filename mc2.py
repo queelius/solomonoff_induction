@@ -43,9 +43,12 @@ class MarkovChain:
         method. it allows you to add arbitrary percepts to the model, without
         making any assumptions about order or the structure of the data.
         """
-        for i in range(len(data)):
+        N = len(data)
+        for i in range(N):
             tokens = data[i]
             m = len(tokens)
+            if i % 10000 == 0:
+                print(f'{i/N*100} percent complete')
             for j in range(m):
                 for k in range(0, order+1):
                     if m <= j+k:
